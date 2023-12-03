@@ -49,7 +49,6 @@ require_once $_SERVER['DOCUMENT_ROOT']."/pi_dashboard/assets/loader.php";
 			</div>
 		</div>
 	</div>
-
 </body>
 
 </html>

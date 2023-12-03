@@ -24,6 +24,16 @@ function loadJS() {
 	echo($echo);
 }
 
+// Refresh after a certain amount of time (in minutes and seconds, but all are optional)
+// function refreshAfter(...$mins=5, ...$secs=0) {
+// 	$mins = (int) $mins;
+// 	$secs = (int) $secs;
+// 	$total = $secs + ($mins * 60);
+// 	$echo = <<<EOT
+// 		<meta http-equiv="refresh" content="$total">
+// 	EOT;
+// 	echo($echo);
+// }
 
 /*
 FORMATTING
