@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@600&family=Cormorant+Garamond:ital,wght@1,500&display=swap');
+
+html, body {
+	background-color: #010101f9;
+	color: #fff;
+	width: 20in;
+	height: 11in;
+	margin-top: .4in;
+	margin-bottom: .4in;
+	margin-left: .45in;
+	margin-right: .45in;
+	font-family: 'Chivo Mono', monospace;
+}
+
+.container-fluid {
+	height: 100%;
+}
+
+.row {
+	height: 50%;
+}
+
+#temperature_title {
+	font-size: 42px;
+	font-weight: bold;
+}
+
+#temperature {
+	font-size: 120px;
+	font-weight: bold;
+	align-content: center;
+}
