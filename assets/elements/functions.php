@@ -2,7 +2,7 @@
 
 
 // Load variables
-require_once $_SERVER['DOCUMENT_ROOT']."/pi_dashboard/assets/elements/variables.php";
+require_once $_SERVER['DOCUMENT_ROOT']."/assets/elements/variables.php";
 
 /*
 PAGE LOADING
@@ -103,16 +103,18 @@ function get($url) {
 /*
 WEATHER
 */
-function current_temperature_outside ($fancy=FALSE) {
+function current_temperature_outside () {
+	$fancy = (bool) TRUE;
 	// Get the key from secrets.php to use in this function's scope
 	global $weatherAPIKey;
 
-	$weather = get("https://api.openweathermap.org/data/2.5/weather?lat=35.123179&lon=-78.988155&appid=$weatherAPIKey&units=imperial");
+	$weather = get("https://api.openweathermap.org/data/2.5/weather?lat=35.123179&lon=-78.988155&appid=5813031b3a7688b9f831457573f29d59&units=imperial");
 	$weather = json_decode($weather);
 
 	// Get the temperature from the weather object in 
 	// Fahrenheit and round to the nearest whole number, then add the degree symbol
 	$temperature = $weather->main->temp;
+	$temperature = round($temperature, 0, PHP_ROUND_HALF_UP);
 	$temperature = (string) $temperature;
 	if ($fancy === TRUE) {
 		$temperature = $temperature."°F";

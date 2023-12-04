@@ -3,30 +3,34 @@
 html, body {
 	background-color: #010101f9;
 	color: #fff;
-	width: 20in;
-	height: 11in;
-	margin-top: .4in;
-	margin-bottom: .4in;
-	margin-left: .45in;
-	margin-right: .45in;
+	width: 100vw;
+	height: 100vh;
 	font-family: 'Chivo Mono', monospace;
 }
 
 .container-fluid {
+	/* border: #fff solid 1px; */
 	height: 100%;
+	padding: .4in;
 }
 
 .row {
 	height: 50%;
+	/* border: #fff solid 1px; */
 }
 
-#temperature_title {
+/* .col {
+	border: #fff solid 1px;
+} */
+
+#title {
 	font-size: 42px;
 	font-weight: bold;
+	text-align: center;
 }
 
-#temperature {
-	font-size: 120px;
+#content {
+	font-size: 300px;
 	font-weight: bold;
-	align-content: center;
+	text-align: center;
 }

@@ -1,7 +1,6 @@
 <?php
 
 
-
 // Debug & development settings
 if (isset($debug) === TRUE && $debug === TRUE) {
 	error_reporting(E_ALL);
