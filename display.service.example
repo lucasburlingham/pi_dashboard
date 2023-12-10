@@ -1,0 +1,15 @@
+[Unit]
+Description=Autostart Script at network-online.target
+After=network-online.target
+Wants=network-online.target
+
+[Install]
+WantedBy=network-online.target
+
+[Service]
+ExecStart=/bin/bash /home/USER/.config/display/display.sh
+Type=simple
+User=USER
+Group=USER
+WorkingDirectory=/home/USER
+Restart=on-failure
